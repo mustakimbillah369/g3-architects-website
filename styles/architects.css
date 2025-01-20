@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
 .work-sans-font {
@@ -8,126 +7,138 @@
   font-style: normal;
 }
 
-header, main , footer{
+header,
+main,
+footer {
   padding-left: 150px;
   padding-right: 150px;
 }
 
 /* shared styles */
 
-  .display-flex{
-    display: flex;
-  }
+.display-flex {
+  display: flex;
+}
 
-  .text-gray{
-    color: #424242;
-    /* dark-02  */
-  }
+.text-gray {
+  color: #424242;
+  /* dark-02  */
+}
 
-  .text-light-gray{
-    color: #727272;
-    /* dark-03 */
-  }
-  .bg-light{
-    background-color: rgba(255, 144, 14, 0.10);
-  }
+.text-light-gray {
+  color: #727272;
+  /* dark-03 */
+}
 
-  .btn-primary{
-    background-color: #ff900e;
-    color: white;
-    padding: 20px 25px;
-    font-size: 1.25rem;
-    font-weight: 600;
-    border-radius: 8px;
-    border: none;
-  }
-  main > section{
-    margin-top: 130px;
-  }
+.bg-light {
+  background-color: rgba(255, 144, 14, 0.10);
+}
+
+.btn-primary {
+  background-color: #ff900e;
+  color: white;
+  padding: 20px 25px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+}
+
+.section-title {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 7%;
+}
+
+main>section {
+  margin-top: 130px;
+}
 
 /* header styles */
 
 /* navbar related styles */
-.navbar{
+.navbar {
   justify-content: space-between;
   /* এর ফলে ন্যাবের মধ্যে থাকা দুইটা চাইল্ড দুইদিকে চলে যাবে।  */
   align-items: center;
-  /* ৩ রেম দেওয়ায় একই লাইনে ছিলো না, তাই সেন্টার এলাইন করেছি  */ 
+  /* ৩ রেম দেওয়ায় একই লাইনে ছিলো না, তাই সেন্টার এলাইন করেছি  */
 
 }
-.nav-links{
 
-}
-.brand{
+.brand {
   font-weight: bold;
   font-size: 3rem;
   /* 16px = 1rem , 45px = 3rem */
 }
-.nav-item{
+
+.nav-item {
   list-style: none;
   /* অথবা ul ট্যাগের মধ্যে type="none" বসিয়ে  */
-  margin-right: 30PX; 
+  margin-right: 30PX;
 }
-.nav-link{
+
+.nav-link {
   /* এঁকোর ট্যাগের জন্য নিচে আন্ডার লাইন আসছে তাই a tag কে টেক্টস ডেকোরেশন করতে হবে।   */
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
 }
 
-.navbar, .banner{
+.navbar, .banner {
   max-width: 1440px;
   margin: 0 auto;
 }
 
 /* banner related styles */
-.banner-content{
+.banner-content {
   max-width: 860px;
   margin: 0 auto;
   text-align: center;
   margin-bottom: 50px;
 }
-.banner-title{
+
+.banner-title {
   font-weight: 700;
   font-size: 4rem;
 }
-.banner-description{
+
+.banner-description {
   margin-bottom: 30px;
 }
-.banner-image{
+
+.banner-image {
   width: 100%;
 }
 
 /* main related style start */
-main{
+main {
   max-width: 1440px;
   margin: 0 auto;
   /* margin: 0 auto = এটা দিলে সেন্টারে থাকে */
 }
 
 /* teams & team img & features related stlye */
-.teams{
+.teams {
   align-items: center;
   margin-top: 85px;
 }
-.team-img-container{
+
+.team-img-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
-.our-features{
+
+.our-features {
   margin-left: 130px;
   max-width: 530px;
 }
-.feature-title{
-  font-size: 2.8rem;
-  font-weight: 700;
+
+.feature-description {
   margin-bottom: 7%;
 }
-.feature-description{
-  margin-bottom: 7%;
-}
-#quick-list{
+
+#quick-list {
   font-weight: 500;
 }
 
@@ -135,26 +146,108 @@ main{
 
 } */
 
-#features{
+#features {
   color: #ff900e;
 }
 
+/* some facts related styles  */
+
+.facts-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.fact-card {
+  border: 1px solid #ff900e;
+  border-radius: 8px;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+.section-title{
+  margin-bottom: 24px;
+}
+.fact-description{
+  max-width: 540px;
+  margin-bottom: 100px;
+}
+
+/* sponsor related styles  */
+.sponsor-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponsor-companies{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+.sponsor-companies img {
+  filter: grayscale(100%);
+
+  /* রঙ্গিন ছবিকে গ্রে / সাদাকালো কালার করার জন্য গুগলে সার্চ দিয়ে এটা বের করা হয়েছে  */
+}
+
+
+
+
+
 /* responsive media query */
-@media  screen and (max-width: 576px) {
-    .navbar, .nav-link, .teams {
-      flex-direction: column;
-    }  
-    .team-img-container{
-      grid-template-columns: repeat(1, 1fr);
-    }
-    .our-features{
-      margin-left: 20px;
-    }
+@media screen and (max-width: 576px) {
+
+  .navbar,
+  .nav-link,
+  .teams {
+    flex-direction: column;
+  }
+
+  .team-img-container, .facts-container, .sponsor-companies {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .facts-container, .sponsor-companies{
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .our-features {
+    margin-left: 20px;
+  }
 }
 
 /* Medium size device */
-@media  screen and (min-width: 576px) and (max-width: 992px) {
-  .teams{
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .teams, .navbar, .nav-link {
     flex-direction: column;
+  }
+
+  .our-features {
+    margin-left: 50px auto;
+  }
+
+  .facts-container, .sponsor-companies {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    justify-content: center;
+  }
+  .sponsor-companies, .facts-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px;
+    justify-items: center;
   }
 }
